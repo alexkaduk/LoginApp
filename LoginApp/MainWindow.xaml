@@ -1,0 +1,51 @@
+﻿<Window x:Class="LoginApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LoginApp"
+        mc:Ignorable="d"
+        Title="Authentication / Getting authorization token" 
+        Width="350" MinWidth="350"
+        Height="355.732" MinHeight="300"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label x:Name="label" 
+               Content="Login:" 
+               Width="120" Height="23"
+               Margin="0,20,0,0"
+               HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBox x:Name="emailTextBox" 
+                 Text="mik@mik.pz"
+                 Width="120" Height="23"
+                 Margin="0,40,0,0" 
+                 HorizontalAlignment="Center" VerticalAlignment="Top"
+                 TextWrapping="Wrap"/>
+        <Label x:Name="label1" 
+               Content="Password:"
+               Width="120" Height="23"
+               Margin="0,80,0,0"
+               HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBox x:Name="passwordTextBox" 
+                 Text="wmt0nline" 
+                 Width="120" Height="23" 
+                 Margin="0,100,0,0"
+                 HorizontalAlignment="Center"  VerticalAlignment="Top"
+                 TextWrapping="Wrap"/>
+        <Button x:Name="loginButton" 
+                Content="Login" 
+                Width="120"
+                Margin="0,160,0,0"
+                HorizontalAlignment="Center" VerticalAlignment="Top" Click="loginButton_Click"/>
+        <Label x:Name="label2" 
+               Width="120"
+               Content="Authorization token:"
+               Margin="0,220,0,0"
+               HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBox x:Name="tokenTextBox" 
+                 HorizontalAlignment="Stretch" 
+                 Margin="0,240,0,0" 
+                 TextWrapping="Wrap" 
+                 Text="Click 'Login' button to get authorization token" />
+    </Grid>
+</Window>
